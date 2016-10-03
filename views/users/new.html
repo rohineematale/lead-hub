@@ -1,0 +1,27 @@
+<section class="my_account sign_up_outer parallax" style="background-position: 50% 77px;">
+  <div class="container">
+    <div class="signup_block clearfix">
+      <div class="login">
+        <h2>Sign Up</h2>
+        <form class="signup_form" id="new_user" action="/users" accept-charset="UTF-8" method="post">
+          <!-- <input name="utf8" type="hidden" value="✓"> -->
+          <!-- <input type="hidden" name="authenticity_token" value="vYsJN7RBukU/Kaw0Cj9nat6Xjajsvn4u8v20S46V8gqBJ0Xl11b5UdH3AaSiASQOZC5Gqf3NX1cVFnMoojFC/A=="> -->
+          <input placeholder="First Name" class="form-control" required="required" type="text" name="first_name" id="user_first_name">
+          <input placeholder="Last Name" class="form-control" required="required" type="text" name="last_name" id="user_last_name">
+          <input placeholder="Email" class="form-control" required="required" type="text" value="" name="email" id="user_email">
+          <input placeholder="Mobile No." class="form-control" required="required" type="text" name="mobile" id="user_mobile">
+          <input autocomplete="off" placeholder="Password" class="form-control" required="required" type="password" name="password" id="user_password">
+          <input autocomplete="off" placeholder="Re-type Password" class="form-control" required="required" type="password" name="password_confirmation" id="user_password_confirmation">          
+          <div class="clearfix">
+            <div class="pull-left">
+              <input type="checkbox" value="agree this condition" id="term_checkbox">
+              <label for="term_checkbox">I agree to the term of use</label>
+            </div>
+          </div>
+          <div class="center"> <input type="submit" class="btn btn-lg btn-login btn-block rr-sign-up"></div>
+          <p class="text-center note">Have an account with us? <a href="/users/sign_in">Login here.</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
